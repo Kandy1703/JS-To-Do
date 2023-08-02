@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100&family=Gruppo&family=Instrument+Serif&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <button id="revertButton"  class="hide">Back</button>
+   <div class="" id="blur">
+    <header id="top" class="top">
+        <span class="head1 frist">Tasks <span class="head2">List</span></span>
+    </header>
+
+    <h1 id="noItems" class="">No Items Lists in this Page</h1>
+
+<div class="parent">
+    
+    <div class="circle">
+        <div class="plus"  onclick="showAddTask()"><h2><a href="#">+</a> </h2> </div>    
+    </div>
+        <h2 class="task" onclick="showAddTask()">Add Item</h2>
+    
+</div>
+</div>
+<!-- Container Visible -->
+
+    <div id="cardcontainer" class="cardcontainer">    
+    </div>
+    <div id="selectContainer" class="selectContainer hide"></div>
+
+
+<!-- Add Container Boxs  -->
+<div class="popupbox hide" id="popup">
+    <div class="box">
+        <h2>Add New List </h2>
+        <div class="input-box">
+            <input type="text" id="cardname" placeholder="Add Task List">
+        </div>
+        <div class="addclose">
+            <button type="button" onclick="addCard()" class="addbox" > Add </button>
+            <button  class="closebox" onclick="hideAddTask()">Close</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Add List of item ex. item, swim, Address -->
+
+<div class="popupbox1 hide1" id="popupbox1">
+    <!-- <div class="box1">
+        <h2>Add New Item </h2>
+        <div class="input-box1">
+            <input type="text" id="listItem"  placeholder="Add Task Item">
+        </div>
+        <div class="addclose1">
+            <button type="button" onclick="addListContainer()" id="addListContainer" class="addbox1"> Add </button>
+            <button  class="closebox1" id="" onclick="closeBtn()">Close</button>
+        </div>
+    </div> -->
+</div>
+
+
+
+
+
+
+<!-- ####### Popup-Container ######## --> 
+<!-- <div class="Popupbox"></div> -->
+
+<!-- ############ -->
+<!-- <div class="contentbox">
+    <div class="popups" id="popup">
+        
+        <p class="countryNameHead"></p>
+        
+        <hr>
+        <div class="parentlist">
+        <div> <img src="./delet.png" onclick="hide()" height="30px"></div>
+        <div class="circle-item">
+            <div class="pluschr">+</div>
+        </div>
+        </div>
+    </div>
+</div> --> 
+    <script src="./script.js">
+    </script>
+
+</body>
+</html>

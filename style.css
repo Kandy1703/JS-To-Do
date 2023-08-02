@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    width: auto;
+    background-color: #245;
+    margin: 40px;
+    color: white;
+}
+#blur.active{
+    filter: blur(20px);
+    pointer-events: none;  
+    user-select: none;
+}
+.top{
+    position: relative;
+    top: 25px;
+}   
+.head1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.head2{
+    font-style: ;
+} 
+
+     /* Task and Plus */
+
+.parent{
+    /* display: wrap; */
+    display: flex;
+    justify-content: flex-end;
+    
+     
+}
+.circle{
+    width: 3%;
+    height: 3%;
+    border-radius: 50%;
+    background-color: aqua;  
+    position: relative;
+    bottom: 10px;
+    right: 90px;
+}
+.plus{
+font-size: 20px;
+font-weight: bolder;
+text-align: center;
+}
+
+.task{
+    /* width: 120px; */
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: white;
+    /* margin-top: 8px; */
+    position: relative;
+    right: 80px;
+    bottom: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Second page Add task*/
+
+.popupbox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.show{
+    display: block;
+}
+
+
+#popupadditem{
+    /* display: none; */
+}
+/* @@@@  Enter Item Popup @@@@@ */
+.box{
+    width: 400px;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #122425;
+}
+
+.popupbox h2{
+    text-align: center;
+    padding-top: 20px;
+}
+.input-box{
+    margin: 10px auto;
+    width: 80%;
+    padding-top: 10px;
+}
+.input-box input{
+    width: 100%;
+    border-radius: 20px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+.addclose{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    padding-top: 20px;
+}
+button{
+    width: 80px;
+    height: auto;
+    background-color: orangered;
+    border-radius: 20px;
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+    
+}
+button:hover{
+    box-shadow: inset 1px -1px #122425;
+    filter: drop-shadow(2px 2px 2px white);
+}
+.addbox{
+    position: absolute;
+    left: 20%;
+    top: 0px;
+}
+.closebox{
+    position: absolute;
+    right: 20%;
+    top: 0px;
+}
+/*  @@@@@@@  Add List of item ex. item, swim, Address @@@@@ */
+
+.box1{
+    width: 400px;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(54, 23, 230, 0.169);
+}
+.popupbox1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.hide1{
+    display: none;
+}
+
+.popupbox1 h2{
+    text-align: center;
+    padding-top: 20px;
+}
+.input-box1{
+    margin: 10px auto;
+    width: 80%;
+    padding-top: 10px;
+}
+.input-box1 input{
+    width: 100%;
+    border-radius: 20px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+.addclose1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    padding-top: 20px;
+}
+button{
+    width: 80px;
+    height: auto;
+    background-color: orangered;
+    border-radius: 20px;
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+    
+}
+button:hover{
+    box-shadow: inset 1px -1px #122425;
+    filter: drop-shadow(2px 2px 2px white);
+}
+.addbox1{
+    position: absolute;
+    left: 20%;
+    top: 0px;
+}
+.closebox1{
+    position: absolute;
+    right: 20%;
+    top: 0px;
+}
+/* @@@@@@@@@@@@@@@@@@@@@ Add Container  @@@@@@@@@*/
+
+.cardcontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    overflow-wrap: break-word;
+    /* width: min-content; */
+    /* position: relative; */
+    /* border:  2px solid black; 
+    background-color: white; */
+}
+.selectContainer{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    overflow-wrap: break-word;
+}
+.card{
+    width: 250px;
+    min-height: 300px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+#cardcontainer h1{
+    color: rgb(0, 225, 255);
+    text-align: center;
+    padding: 20px;
+    /* font-size: 2em; */
+    /* line-height: 20px; */
+    /* text-wrap: balance; */
+    /* overflow-wrap: break-word; */
+    /* width: min-content; */
+    /* padding-top: auto; */ 
+}
+#selectContainer h1{
+    color: rgb(0, 225, 255);
+    text-align: center;
+    padding: 20px;
+}
+.liststyle{
+    /* overflow-wrap: break-word; */
+}
+#cardcontainer .img{
+    height: 30px;
+    
+}
+.styleimgss{  
+   display: flex;
+   justify-content: end; 
+   align-items: end;
+   min-height: 30vh;
+}
+img{
+    height: 30px;
+    position: relative;
+    bottom: 10px;
+}
+
+.doneBtn{
+    width: 80px;
+    padding: 2px;
+    text-align: center;
+    font-size: .7em;
+    background-color:rgb(21, 176, 223);
+    position: relative;
+    left: 65%;
+    bottom: 24px;
+}
+.deleteBtn{
+   
+}
+
+ol{
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+    list-style-type: none;
+    font-size: 20px;
+    word-wrap: break-word;
+    /* text-align: center; */
+}
+.done{
+    display: none;
+   
+}
+#revertButton{
+    width: 100px;
+    background-color: #DAF7A6;
+}
+#noItems{
+    position: absolute;
+    top: 25%;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .popups{
+    display: none;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+p{
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.parentlist{
+    display: flex;
+    justify-content: end;
+    height: 35vh;
+    align-items: flex-end;
+    position: relative;
+}
+.circle-item{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    background-color: rgb(129, 127, 255);  
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.pluschr{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+div img{
+    position: absolute;
+    right: 40px;
+    bottom: 2px;
+} */
