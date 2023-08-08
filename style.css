@@ -314,6 +314,31 @@ ol{
     display: none;
 }
 
+@media  screen and (max-width: 480px) and (min-width: 320px){
+    .top{ 
+        display: none;
+    }
+    .circle{
+        width: 15%;
+        height: 3%;
+        border-radius: 50%;
+        background-color: aqua;  
+        position: relative;
+        bottom: 50px;
+        right: 5px;
+    }
+    .task{
+        position: relative;
+        right: 0px;
+        bottom: 50px;
+    }
+    #revertButton{
+        position: relative;
+        left: -20px;
+        bottom: 18px;
+
+    }
+    }
 
 
 
